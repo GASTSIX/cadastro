@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visualizar - Pedidos</title>
+    <link rel="shortcut icon" href="../img/favicon2.svg" type="image/x-icon">
+    <link rel="stylesheet" href="../css/vis_pedidos.css">
+    <script src="../css/vis_pedidos.css" defer></script>
+</head>
+
+<body>
+    <header><!--cabecalho-->
+        <nav class="botao-nav">
+            <a class="botao-voltar" href="voltar">
+                <svg xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 384 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                    <path
+                        d="M380.6 81.7c7.9 15.8 1.5 35-14.3 42.9L103.6 256 366.3 387.4c15.8 7.9 22.2 27.1 14.3 42.9s-27.1 22.2-42.9 14.3l-320-160C6.8 279.2 0 268.1 0 256s6.8-23.2 17.7-28.6l320-160c15.8-7.9 35-1.5 42.9 14.3z" />
+                </svg>
+            </a>
+            <h1> Visualizar Pedidos </h1>
+            <a class="botao-fechar" href="fechar">
+                <svg xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 384 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                    <path
+                        d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z" />
+                </svg>
+            </a>
+        </nav>
+    </header>
+
+    <main class="banner"><!--indica o conteudo principal-->
+
+        <section class="section__formulario"><!--tag section indica uma secao-->
+            <form class="formulario-central">
+
+
+                <div class="alinhamento">
+                <div class="div__alinhamento_campos">
+                    <label for="input__srcdtinicial">Data Inicial: </label>
+                    <input type="text" name="input__srcdtinicial" id="">
+                </div>
+
+                <div class="div__alinhamento_campos">
+                    <label for="input__srcdtfinal">Data Final: </label>
+                    <input type="text" name="input__srcdtfinal" id="">
+                </div>
+
+                <div class="div__alinhamento_campos">
+                    <label for="input__srcpedido">Pedido: </label>
+                    <input type="text" name="input__srcpedido" id="">
+                </div>
+                </div>
+
+
+
+                <div class="PDF">
+                    <table cellpadding="0" cellspacing="0" width="50%" height="50%">
+                        <tr>
+                            <td>
+                                <iframe src="../issues/relatorio.pdf" width="600" height="600" style="border: none;">
+                                </iframe>
+                            </td>
+                        </tr>
+                    </table>
+
+                </div>
+
+                <div class="btn">
+
+                    <button class="botao_gerarXLS" type="submit">Gerar XLS</button>
+                    <button class="botao_gerarPDF" type="submit">Gerar PDF</button>
+                </div>
+            </form>
+
+        </section>
+    </main>
+
+</body>
+
+</html>
